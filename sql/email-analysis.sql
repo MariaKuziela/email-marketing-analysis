@@ -19,11 +19,26 @@ GROUP BY Time_Email_sent_Category;
 
 --- Czy długość emaila (Word_Count) ma związek z sukcesem? P
 
-SELECT
+/*SELECT
     Email_Status, AVG(Word_count) AS "avg_word"
 FROM email_campaigns
 WHERE Email_Status IN (0, 1)
 GROUP BY Email_Status;
+*/
+
+SELECT
+    CASE
+        WHEN Word_Count BETWEEN 40 AND 524 THEN '40-524'
+        WHEN Word_Count BETWEEN 525 AND 693 THEN '525-693'
+        WHEN Word_Count BETWEEN 694 AND 880 THEN '694-880'
+        ELSE '881-1316'
+    END AS Word_Count_Group,
+    COUNT(Email_ID) AS total_emails,
+    SUM(CASE WHEN Email_Status = 1 THEN 1 ELSE 0 END) AS positive_reactions,
+    ROUND(SUM(CASE WHEN Email_Status = 1 THEN 1 ELSE 0 END) * 100.0 / COUNT(Email_ID), 2) AS success_rate
+FROM email_campaigns
+WHERE Email_Status IN (0, 1)
+GROUP BY Word_Count_Group;
 
 
 --- Która lokalizacja klientów (Customer_Location) ma najwyższy success rate?
