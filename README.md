@@ -17,3 +17,10 @@ Email Length — Shorter emails perform significantly better. Emails under 524 w
 Number of Links — Emails with 6-15 links have the highest success rate (17.6%). More than 16 links reduces effectiveness to 15.3% — likely overwhelming recipients.
 
 Customer Location — Location has minimal impact on success rate (16.0% - 17.4%). Campaigns perform consistently across all locations.
+
+
+## Dashboard
+
+https://public.tableau.com/views/tableau_project1_17781806846110/Dashboard1?:language=en-US&:sid=&:redirect=auth&publish=yes&showOnboarding=true&:display_count=n&:origin=viz_share_link
+
+
