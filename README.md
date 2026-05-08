@@ -4,7 +4,7 @@ Analysis of email marketing campaign performance to identify factors influencing
 Dataset from Kaggle (Email Campaign Management for SME), 68353 records, columns such as: email status, customer location, total links, word count.
 
 # Tools: 
-Jupyter Notebook (Python), DBeaver (SQL).
+Jupyter Notebook (Python), DBeaver (SQL), Tableau.
 
 
 # Key Findings
