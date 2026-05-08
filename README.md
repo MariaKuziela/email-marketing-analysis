@@ -23,4 +23,4 @@ Customer Location — Location has minimal impact on success rate (16.0% - 17.4%
 
 https://public.tableau.com/views/tableau_project1_17781806846110/Dashboard1?:language=en-US&:sid=&:redirect=auth&publish=yes&showOnboarding=true&:display_count=n&:origin=viz_share_link
 
-
+![Dashboard](tableau/dashboard-tableau-email-camapign.png)
